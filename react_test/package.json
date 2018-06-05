@@ -46,7 +46,7 @@
     "es6-promise": "^4.2.4",
     "formidable": "^1.2.1",
     "immutable": "^3.8.2",
-    "jquery": "^2.2.4",
+    "jquery": "^3.0.0",
     "less": "^3.0.2",
     "less-loader": "^4.1.0",
     "lodash": "^4.17.10",
