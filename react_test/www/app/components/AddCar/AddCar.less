@@ -1,0 +1,270 @@
+
+.content_box {
+  margin-top       : 16px;
+  border           : 1px dashed #e9e9e9;
+  border-radius    : 6px;
+  background-color : #fafafa;
+  min-height       : 200px;
+  text-align       : center;
+  //padding-top      : 80px;
+}
+
+.btn_box {
+  margin-top : 24px;
+}
+
+.AddCar {
+  .Step1 {
+    padding : 20px 20px 0;
+    text-align : left;
+  }
+  .Step2 {
+    text-align : left;
+    padding    : 20px 20px 20px;
+
+    .Step2_upunit {
+
+      * {
+        margin  : 0;
+        padding : 0;
+      }
+
+      h3 {
+        line-height : 30px;
+      }
+
+      .shangchuanniu, .shangchuanniu_copy {
+        width       : 30px;
+        height      : 30px;
+        background  : url(/images/jia.svg);
+        font-size   : 80px;
+        text-align  : center;
+        line-height : 40px;
+        color       : white;
+        cursor      : pointer;
+      }
+      .shangchuanniu, .shangchuanniu_copy {
+        //margin-top    : 10px;
+        //margin-bottom : 10px;
+      }
+      .imgbox, .imgbox_copy {
+        margin-top : 10px;
+        border     : 1px dashed #c0c0c0;
+        padding    : 20px 10px 10px 20px;
+        min-height : 100px;
+        overflow   : hidden;
+
+        .preDiv {
+          position            : relative;
+          left                : 0;
+          top                 : 0;
+          width               : 100px;
+          height              : 100px;
+          border              : 1px solid #eee;
+          float               : left;
+          margin-right        : 10px;
+          margin-bottom       : 10px;
+          background-position : center center;
+          background-size     : cover;
+
+          i.progress-bar {
+            font-style       : normal;
+            display          : block;
+            position         : absolute;
+            left             : 0;
+            top              : 50%;
+            transform        : translate(0, -50%);
+            width            : 0%;
+            height           : 21px;
+            text-align       : center;
+            color            : white;
+            background-color : rgba(192, 192, 192, 0.5);
+          }
+          i.progress-text {
+            font-style : normal;
+            display    : block;
+            position   : absolute;
+            left       : 50%;
+            top        : 50%;
+            transform  : translate(-50%, -50%);
+            width      : 100%;
+            text-align : center;
+            color      : white;
+            //background-color : rgba(192, 192, 192, 0.5);
+          }
+
+          @bheight : 25px;
+          b {
+            margin           : 0;
+            padding          : 0;
+            position         : absolute;
+            top              : 0;
+            right            : 0;
+            //padding         : 10px;
+            width            : @bheight;
+            height           : @bheight;
+            text-align       : center;
+            font-size        : 16px;
+            //background      : url(/images/close.svg) #fff;
+            line-height      : @bheight;
+            background-color : #fff;
+            border-radius    : 50%;
+            //background-size  : cover;
+            display          : none;
+          }
+
+          &:hover b {
+            display : block;
+          }
+        }
+
+        &.cur {
+          border : 1px solid orangered;
+        }
+      }
+    }
+
+    .Step2_upunit:not(:first-of-type) {
+      margin-top : 20px;
+    }
+  }
+
+  .Step3 {
+    text-align : left;
+    padding    : 20px 20px 20px;
+    .hd {
+      padding : 6px 0;
+    }
+    .filebox {
+      height     : 300px;
+      overflow-y : scroll;
+      border     : 1px solid #ccc;
+      padding    : 10px;
+    }
+
+    .filebox {
+      margin-top : 10px;
+      min-height : 100px;
+      overflow   : hidden;
+      overflow-y : scroll;
+      border     : 1px solid #ccc;
+      //padding    : 20px 10px 10px 20px;
+      padding    : 10px;
+
+      .Step3_FileBar {
+        margin-bottom : 10px;
+        a {
+          margin-left     : 10px;
+          color           : blue;
+          text-decoration : none;
+        }
+        a:hover {
+          color : orange;
+        }
+      }
+      .Step3_FileBar:nth-of-type(2n) {
+        background-color : #c0c0c0;
+      }
+      .Step3_FileBar:nth-of-type(2n+1) {
+        background-color : lightgray;
+      }
+
+      .ssicon {
+        width        : 30px;
+        //height       : 30px;
+        margin-right : 4px;
+      }
+
+      .preDiv {
+        position            : relative;
+        left                : 0;
+        top                 : 0;
+        width               : 100px;
+        height              : 100px;
+        border              : 1px solid #eee;
+        float               : left;
+        margin-right        : 10px;
+        margin-bottom       : 10px;
+        background-position : center center;
+        background-size     : cover;
+
+        i.progress-bar {
+          font-style       : normal;
+          display          : block;
+          position         : absolute;
+          left             : 0;
+          top              : 50%;
+          transform        : translate(0, -50%);
+          width            : 0%;
+          height           : 21px;
+          text-align       : center;
+          color            : white;
+          background-color : rgba(192, 192, 192, 0.5);
+        }
+        i.progress-text {
+          font-style : normal;
+          display    : block;
+          position   : absolute;
+          left       : 50%;
+          top        : 50%;
+          transform  : translate(-50%, -50%);
+          width      : 100%;
+          text-align : center;
+          color      : white;
+          //background-color : rgba(192, 192, 192, 0.5);
+        }
+
+        @bheight : 25px;
+        b {
+          margin           : 0;
+          padding          : 0;
+          position         : absolute;
+          top              : 0;
+          right            : 0;
+          //padding         : 10px;
+          width            : @bheight;
+          height           : @bheight;
+          text-align       : center;
+          font-size        : 16px;
+          //background      : url(/images/close.svg) #fff;
+          line-height      : @bheight;
+          background-color : #fff;
+          border-radius    : 50%;
+          //background-size  : cover;
+          display          : none;
+        }
+
+        &:hover b {
+          display : block;
+        }
+      }
+
+      &.cur {
+        border : 1px solid orangered;
+      }
+    }
+  }
+
+}
+
+@sheight : 80px;
+.sicon {
+  width  : 80px;
+  height : @sheight;
+}
+
+.sicon-progress {
+  margin      : 0;
+  padding     : 0;
+  line-height : @sheight * 0.4;
+}
+
+//status="active" 属性 100% 有问题...添加以下代码解决
+//.Step3_bar {
+//  .ant-progress-outer {
+//    width : 96%;
+//  }
+//  .ant-progress-text {
+//    width : 3em;
+//  }
+//}

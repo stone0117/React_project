@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="nnnnnnnnnn" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="node_modules" />
+      <sourceFilesUrls>
+        <item url="file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file:///Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

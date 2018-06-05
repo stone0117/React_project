@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="express.get" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/../../../DefinitelyTyped-master/types/fabric" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../DefinitelyTyped-master/types/fabric" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

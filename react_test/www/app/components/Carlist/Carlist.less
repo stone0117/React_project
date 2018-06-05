@@ -1,0 +1,116 @@
+@import "../../containers/App.less";
+
+.carlist {
+
+  .ant-row {
+    height : 50px !important;
+
+    .ant-col-3 {
+      text-align : right;
+    }
+  }
+  .price, .km {
+    button {
+      width : 100%;
+    }
+  }
+  .ant-cascader-picker {
+    width : 300px;
+  }
+  .row1 {
+    height : 80px !important;
+    .ant-col-3 {
+      padding : 3px 0px 0px 0px;
+    }
+  }
+  .row2 {
+    .ant-col-3 {
+      padding : 0px 0px 0px 0px;
+    }
+  }
+  .buydate {
+    button {
+      width   : 100%;
+      padding : 0;
+      span {
+        font-size  : 12px;
+        text-align : center;
+      }
+    }
+  }
+}
+
+em {
+  text-decoration : none;
+  font-style      : normal;
+  margin-right    : 20px;
+  cursor          : pointer;
+  &:hover {
+    color : orange;
+  }
+  &.cur {
+    color : @primary-color;
+  }
+}
+
+.ant-tabs-nav .ant-tabs-tab {
+  padding : 0px 10px 4px !important;
+}
+
+.lastRow {
+  //background-color : #ffd70038;
+  //.ant-col-21 {
+  //  background-color : #ffd70038;
+  //}
+  //padding:10px 0;
+  //&>div{
+  //  height:100%;
+  //}
+  .ant-tag {
+    margin-bottom : 6px !important;
+  }
+}
+
+body {
+  //height : 3000px !important;
+}
+
+/*■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■*/
+
+.tablebox {
+  padding-top : 30px;
+
+  .previewsmallpic {
+    width : 100px;
+  }
+  .ButtonGroup {
+    text-align : right;
+  }
+  .ModalButton{
+    margin-right :10px;
+  }
+
+}
+
+.mymodal {
+  padding-bottom : 10px;
+  ul {
+    list-style : none;
+    overflow   : hidden;
+    height     : 110px;
+    li {
+      float         : left;
+      padding       : 4px 6px;
+      border        : 1px solid #c0c0c0;
+      color         : #646464;
+      font-family   : "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+      margin-right  : 10px;
+      margin-bottom : 6px;
+      border-radius : 4px;
+      font-size     : 12px;
+    }
+  }
+  .cl {
+    clear : both;
+  }
+}

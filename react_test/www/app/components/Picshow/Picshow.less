@@ -1,0 +1,271 @@
+* {
+  margin  : 0;
+  padding : 0;
+}
+
+@rightpartW : 300px; /*含有padding*/
+@rightpartpadding : 10px;
+
+.picshow {
+  position         : absolute;
+  width            : 100%;
+  height           : 100%;
+  background-color : black;
+
+  * {
+    box-sizing  : border-box;
+    color       : white;
+    font-family : 'Microsoft Yahei', serif;
+  }
+
+  .bigImgBox {
+    padding-right : @rightpartW;
+    height        : 100%;
+
+    .inner {
+      position : relative;
+      left     : 0;
+      top      : 0;
+      height   : 100%;
+
+      .bigimg {
+        position   : absolute;
+        width      : 90%;
+        max-width  : 90%;
+        max-height : 90%;
+        top        : 50%;
+        left       : 50%;
+        transform  : translate(-50%, -50%);
+      }
+
+      .leftbtn {
+        position : absolute;
+        width    : 50%;
+        height   : 100%;
+        top      : 0;
+        left     : 0;
+        cursor   : url(/images/picture-cursor-left.cur), auto;
+      }
+      .rightbtn {
+        position : absolute;
+        width    : 50%;
+        height   : 100%;
+        top      : 0;
+        right    : 0;
+        cursor   : url(/images/picture-cursor-right.cur), auto;
+      }
+
+      .loadtip {
+        position        : absolute;
+        top             : 50%;
+        left            : 50%;
+        transform       : translate(-50%, -50%);
+        width           : 100px;
+        height          : 100px;
+        text-align      : center;
+        background      : url(/images/loading.svg);
+        background-size : cover;
+      }
+
+      .nobox {
+        position         : absolute;
+        bottom           : 120px;
+        left             : 0;
+        width            : 200px;
+        height           : 50px;
+        background-color : rgba(0, 0, 0, 0.5);;
+        text-align       : center;
+        line-height      : 50px;
+        font-size        : 30px;
+      }
+    }
+
+  }
+
+  .rightpart {
+    position : absolute;
+    right    : 0;
+    top      : 0;
+    width    : @rightpartW;
+    height   : 100%;
+    padding  : @rightpartpadding;
+
+    .carinfo {
+      overflow : hidden;
+
+      h1 {
+        font-size   : 26px;
+        line-height : 30px;
+
+        small {
+          font-size : 16px;
+        }
+      }
+
+      h3 {
+        font-size   : 16px;
+        line-height : 26px;
+      }
+    }
+
+    .albums {
+      padding-top : 16px;
+      overflow    : hidden;
+
+      ul {
+        list-style : none;
+
+        li {
+          float            : left;
+          width            : 50%;
+          height           : 50px;
+          line-height      : 50px;
+          background-color : #eee;
+          text-align       : center;
+          font-size        : 14px;
+          color            : #333;
+          margin-bottom    : 6px;
+          cursor           : pointer;
+
+          &:nth-child(2n) {
+            border-left : 3px solid black;
+          }
+          &:nth-child(2n + 1) {
+            border-right : 3px solid black;
+          }
+
+          &.cur {
+            background-color : gold;
+          }
+        }
+      }
+    }
+    .carlikes {
+      padding-top : 16px;
+      h3 {
+        font-size   : 16px;
+        line-height : 26px;
+      }
+      .contentbox {
+        height           : 140px;
+        background-color : rgba(230, 230, 230, 0.2);
+        position         : relative;
+        overflow         : hidden;
+
+        ul {
+          list-style  : none;
+          line-height : 200%;
+          position    : relative;
+          z-index     : 999;
+
+          li {
+            cursor : pointer;
+            &.cur {
+              background : gold;
+              color      : #333;
+            }
+          }
+        }
+
+        .bar {
+          position         : absolute;
+          right            : 0;
+          top              : 0;
+          width            : 20px;
+          height           : 100%;
+          background-color : #333;
+          z-index          : 99999;
+
+          b {
+            position         : absolute;
+            width            : 20px;
+            background-color : gold;
+            top              : 0;
+            left             : 0;
+            z-index          : 99999;
+          }
+        }
+      }
+    }
+
+    .smallpics {
+      padding-top : 22px;
+      overflow    : hidden;
+      .unit {
+        width      : 8000px;
+        overflow   : hidden;
+        position   : relative;
+        transition : all 0.4s ease 0s;
+
+        ul {
+          list-style   : none;
+          float        : left;
+          width        : @rightpartW - @rightpartpadding * 2;
+          margin-right : 6px;
+          height       : 200px;
+
+          li {
+            float         : left;
+            width         : 50%;
+            height        : 90px;
+            margin-bottom : 6px;
+            position      : relative;
+
+            &:nth-child(2n) {
+              border-left : 3px solid black;
+            }
+            &:nth-child(2n + 1) {
+              border-right : 3px solid black;
+            }
+
+            img {
+              width          : 100%;
+              height         : 100%;
+              /*去掉img和底边的缝隙*/
+              vertical-align : middle;
+            }
+
+            &::before {
+              content          : "";
+              position         : absolute;
+              top              : 0;
+              left             : 0;
+              width            : 100%;
+              height           : 100%;
+              background-color : black;
+              opacity          : 0.6;
+              transition       : all 0.4s ease 0s;
+            }
+
+            &.cur::before {
+              opacity : 0;
+            }
+          }
+        }
+      }
+      .pagenav {
+        padding-top : 8px;
+
+        span {
+          float            : left;
+          height           : 8px;
+          background-color : #eee;
+          border-right     : 3px solid black;
+          border-left      : 3px solid black;
+          cursor           : pointer;
+
+          &.cur {
+            background-color : gold;
+          }
+
+          &:first-child {
+            border-left : none;
+          }
+          &:last-child {
+            border-right : none;
+          }
+        }
+      }
+    }
+  }
+}
